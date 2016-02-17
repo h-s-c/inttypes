@@ -41,12 +41,8 @@
 #pragma once
 #endif
 
-#if _MSC_VER >= 1600 // [
+#if _MSC_VER >= 1800 // [
 #include <stdint.h>
-#  if _MSC_VER <= 1700
-      typedef int64_t   intmax_t;
-      typedef uint64_t  uintmax_t;
-#  endif
 #else // ] _MSC_VER >= 1600 [
 
 #include <limits.h>
